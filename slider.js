@@ -6,8 +6,8 @@ const autoBtn = document.querySelector(".auto");
 let currentSlide = 0;
 let beforeSlide = 0;
 let sliderCts = Array.from(sliderCt);
-let auto = false;
 let autoPlay;
+
 function changeSlide(before, curr) {
   sliderCts[before].classList.remove("showing");
   sliderCts[curr].classList.add("showing");
@@ -20,7 +20,6 @@ function handleAutoBtn() {
   autoBtn.addEventListener("click", handleAutoBtnStop);
 }
 function handleAutoBtnStop() {
-  console.log("hi");
   window.clearInterval(autoPlay);
 }
 
