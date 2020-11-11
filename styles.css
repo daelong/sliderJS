@@ -1,0 +1,58 @@
+@import "reset.css";
+#slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.slider {
+}
+.slider_content {
+  position: absolute; /*한곳에 정렬하기 위해*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-700px);
+}
+.slider_content2 {
+  position: absolute; /*한곳에 정렬하기 위해*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(700px);
+}
+.showing {
+  opacity: 1;
+  z-index: 0;
+  transform: none;
+}
+.slider1 {
+  background-color: #1abc9c;
+}
+.slider2 {
+  background-color: #2ecc71;
+}
+.slider3 {
+  background-color: #3498db;
+}
+.slider4 {
+  background-color: #9b59b6;
+}
+.slider5 {
+  background-color: #34495e;
+}
+.button_box {
+  margin-top: 20px;
+  text-align: center;
+}
